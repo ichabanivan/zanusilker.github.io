@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World!</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+
+</head>
+<body>
+<div id='content'></div>
+
+<script type="text/babel">
+var text;
+  var Input = React.createClass({
+    getInitialState: function() {
+      return {
+        displayedText: text
+      }
+    },
+    handleSearch: function(event) {
+      text = event.target.value;
+
+      this.setState({
+        displayedText: text
+      })
+    },
+    render: function() {
+      return <div className="dynamic">
+        <input type="text" onChange={this.handleSearch}/>
+        <article>
+          {
+            this.state.displayedText
+          }
+        </article>
+      </div>;
+    }
+  });
+
+  ReactDOM.render(
+    <Input />,
+      document.getElementById('content')
+  );
+
+
+
+
+</script>
+</body>
+</html>

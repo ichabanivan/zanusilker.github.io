@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="en" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="en" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="en" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+  <!--<![endif]-->
+  <head>
+
+    <meta charset="utf-8">
+    <title>Ivan Chaban</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon/icon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/icon-114x114.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.min.css">
+      
+    <style type="text/css">
+      #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        overflow: visible;
+        background: url('https://www.hanon-shop.com/themes/hanon/images/ajax-loader.gif') no-repeat center center;
+        background-color: #fff;
+      }
+      #content {
+        display: none;
+      }
+    </style>
+      
+    <script>
+      var preloader;
+        
+      function preload(opacity) {
+        if(opacity <= 0) {
+          showContent();
+        }
+        else {
+          preloader.style.opacity = opacity;
+          window.setTimeout(function() { preload(opacity - 0.05) }, 100);
+        }
+      }
+
+      function showContent() {
+        preloader.style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        preloader = document.getElementById('preloader');
+        preload(1);
+      });
+    </script>
+
+  </head>
+
+  <body data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true" id="inside">
+
+    <div id="preloader"></div>
+
+    <aside class="left_side" title="Меню">
+      <div class="btn_mnu">
+        <div class="btn_row"></div>
+        <div class="btn_row"></div>
+        <div class="btn_row"></div>
+      </div>
+      <div class="aside_content">
+        <div class="user_info">
+          <img src="img/untitled.jpg" alt="Иван Чабан">
+          <h2>Ivan Chaban</h2>
+          <p>Web Developer</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html" title="Главня страница">Home page</a></li>
+            <li><a href="portfolio.html" title="Портфолио">Portfolio</a></li>
+            <li><a href="about.html" title="Обо мне">About me</a></li>
+            <li><a href="contacts.html" title="Контакты">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <div class="container demo-1">
+        <div class="content">
+          <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="home">
+      <h1 class="port">My portfolio</h1>
+      <div class="my_portfolio">
+        <a href="works/alevel">НАЙДИ СЕБЯ В IT: «ЖИЗНЬ ПРОЕКТА»</a>
+        <a href="works/a-level">КУРС FRONT-END </a>
+        <a href="works/allo">Алло</a>
+        <a href="works/dist">SERVICES</a>
+        <a href="works/jqplugin">Tabs</a>
+        <a href="works/modul">Blog</a>
+        <a href="works/Rock, Paper, Scissors">Rock, Paper, Scissors</a>
+        <a href="works/Store-master">Store</a>
+        <a href="works/toDo">ToDo List A-level Ukraine</a>
+      </div>
+    </div>
+
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/html5shiv/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

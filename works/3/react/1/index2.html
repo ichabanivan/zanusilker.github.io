@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+
+
+  <style type="text/css">
+    .article{
+      width: 100%;
+      text-align: center;
+    }
+
+    .article p {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+<div id='content'></div>
+
+<script type="text/babel">
+
+  var Article = React.createClass({
+    render: function () {
+      return <div className="article">
+        <h1>{this.props.header}</h1>
+        <span>{this.props.name}</span>
+        <p>{this.props.text}</p>
+      </div>
+    }
+  });
+
+  ReactDOM.render(
+  <Article header="Основы програмирования" name="Иванов Иван" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur culpa deleniti iusto magni. Aliquid amet asperiores at autem commodi consequuntur corporis cum cumque delectus deleniti distinctio error est eum facere facilis fuga illo in inventore ipsa iste itaque labore magni, nemo nesciunt nostrum perferendis possimus quis sit soluta veritatis vero voluptas voluptates voluptatum! Asperiores corporis, culpa delectus distinctio dolorem necessitatibus qui! Aperiam, atque delectus dicta dolor enim est impedit ipsa maiores minus mollitia nihil nobis numquam omnis pariatur, placeat provident qui reiciendis rem sit voluptas voluptatem voluptates voluptatibus. Eaque eligendi et illo. Aliquam aliquid animi architecto autem consequatur debitis earum error eveniet ipsum iste itaque, neque nisi officiis, praesentium temporibus? Accusamus cupiditate eligendi eveniet incidunt magni molestiae placeat, praesentium quisquam sint sit, soluta tempore. Aperiam delectus distinctio doloribus error, ex necessitatibus sed tenetur? Animi aperiam, architecto eaque hic illo inventore laboriosam minima nisi nobis nostrum odit perferendis quibusdam, tenetur totam ut. Accusamus assumenda excepturi impedit maxime nulla reprehenderit vel voluptate. Aliquam cumque ea eligendi, eos est eum excepturi expedita iure laudantium molestiae mollitia necessitatibus nobis officia porro quod rerum sint tenetur velit voluptates voluptatum. Ad alias aut delectus eligendi minus quia, vel! Animi culpa, dicta dolores ea impedit molestiae nostrum praesentium quas velit vitae. Aspernatur atque dolor doloremque eius, est eum excepturi mollitia quod ratione ullam! Aspernatur commodi culpa deleniti enim esse minima necessitatibus nostrum provident tempora! Adipisci animi deserunt eligendi eum facilis laboriosam, praesentium. Amet at consequatur culpa dignissimos esse, explicabo facere facilis illo impedit in iste iusto, laborum maxime mollitia nemo neque numquam porro provident repudiandae, sed similique sint soluta veniam veritatis voluptates! A atque dolores ex impedit ipsam molestiae obcaecati praesentium quibusdam suscipit tenetur. A accusamus alias architecto deserunt dolores ducimus illum in ipsa molestiae, non odio porro, praesentium recusandae reprehenderit similique, suscipit veritatis vitae? Accusantium autem debitis deserunt ea error eum explicabo incidunt libero, nihil odit quam ratione repellat sint sit soluta velit voluptates. Amet dicta est nisi possimus, saepe unde veritatis? Aspernatur, doloribus, ipsa? Ad at culpa delectus dolorum, eaque eligendi et ex illum maxime natus nisi perspiciatis quis recusandae repellendus sint velit voluptates? Ad alias aperiam autem, beatae consectetur consequatur dolore, ducimus eaque earum eveniet, expedita explicabo facere fuga fugiat incidunt iste labore laudantium maxime nobis nulla numquam officiis praesentium qui quo quos reiciendis rem repellendus sequi tempora ullam velit vero voluptatem voluptates? Accusamus amet culpa, delectus dolore dolorem ea eaque et minima minus nostrum optio sunt voluptatum. Aliquid asperiores aspernatur at dolor dolorem doloremque eius eos id illum impedit ipsa iste laboriosam laborum nam, nobis numquam porro qui quis ratione recusandae reiciendis similique ullam veritatis! Aliquid, architecto distinctio doloremque ducimus et eum, fugiat harum illo in incidunt iste laboriosam laudantium libero nisi recusandae veniam voluptas voluptatum. Atque consequuntur delectus dignissimos doloremque ea eos excepturi exercitationem ipsam nemo odit quasi, qui reiciendis repellat sed voluptatibus? Alias amet cupiditate dolor, dolore et excepturi expedita laudantium magni, nihil officiis provident, quasi quos ratione. Aliquam assumenda consequuntur dolore explicabo laborum libero reiciendis soluta voluptatem! Earum minus, perspiciatis.">adfsdas</Article>,
+  document.getElementById('content')
+  );
+
+
+</script>
+</body>
+</html>
