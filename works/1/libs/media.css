@@ -1,0 +1,262 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1170px) {
+
+}
+
+@media only screen and (max-width : 1040px) {
+ .item .duration{
+    clear: both;
+ }
+ .item .col{
+   width: 100%;
+ }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  /*main-------------------------------------------------------------------------------------------------------------------------------------*/
+  main .block-left{
+    width: 100%;
+  }
+  main .double-title{
+    float: left;
+  }
+  main .block-left .level-box{
+    float: right;
+  }
+  main .block-right{
+    width: 100%;
+  }
+  main .block-left .for-box{
+    display: none;
+  }
+  .modul{
+    width: 50%;
+    padding-left: 30px;
+  }
+  .program-title {
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
+  .program-title::before {
+      position: absolute;
+      left: -20px;
+      font-size: 24px;
+      text-align: center;
+      display: block;
+      width: 100%;
+      line-height: 54px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  /*header-------------------------------------------------------------------------------------------------------------------------------------*/
+  header .block-right{
+    display: none;
+  }
+  header .logo{
+    width: 120px;
+  }
+  .logo img{
+    height: 40px;
+  }
+  header .button{
+    display: block;
+  }
+  /*main-------------------------------------------------------------------------------------------------------------------------------------*/
+  main{
+    	padding: 80px 20px 20px 20px;
+  }
+  main .block-left .title-box .double-title {
+    width: 240px;
+    display: inline-block;;
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  main .block-left .title-box .double-title::before {
+      content: attr(data-title);
+      position: absolute;
+      left: -10px;
+      font-size: 18px;
+      text-align: center;
+      display: block;
+      width: 100%;
+      line-height: 32px;
+    }
+  /*timer--------------------------------------------------------------------------------------------------------------------------------*/
+  .timer span.br{
+      display: block;
+      padding-bottom: 10px;
+    }
+    /**/
+  .registration{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .registration input[type="text"],
+  .registration input[type="Phones"],
+  .registration input[type="email"]{
+    width:80%;
+    font-size: 24px;
+  }
+  .registration select{
+    width: 80%;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media only screen and (max-width : 655px) {
+  .program-title {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .program-title::before {
+      position: absolute;
+      left: -20px;
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      width: 100%;
+      line-height: 34px;
+  }
+}
+@media only screen and (max-width : 600px) {
+  .modul{
+    width: 90%;
+    margin: 10px auto;
+  }
+  /*map------------------------------------------------------------------------------------------------------------------------------------*/
+  footer .contacts{
+    width: 100%;
+    position:static;
+    /*bottom: -235px;
+    right: 0px;*/
+    border: 2px solid #fff;
+    border-bottom: 2px solid #E7662B;
+  }
+}
+@media only screen and (max-width : 535px) {
+  /*item------------------------------------------------------------------------------------------------------------------------------------*/
+  .item div{
+    text-indent: 20px;
+  }
+}
+@media only screen and (max-width : 486px) {
+  /*main-------------------------------------------------------------------------------------------------------------------------------------*/
+  main .block-left .title-box .double-title{
+    padding:20px 0;
+    margin: 0 auto;
+  }
+  main .block-left .level-box{
+    float: left;
+  }
+  main .block-left .for-box{
+    display: block;
+    float: left;
+    text-align: justify;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  /*item------------------------------------------------------------------------------------------------------------------------------------*/
+  .item span{
+    font-size: 16px;
+  }
+  .item div span:last-child{
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  .item a{
+    width: 80%;
+  }
+  /*header-------------------------------------------------------------------------------------------------------------------------------------*/
+  header{
+    padding: 10px 5px;
+  }
+  header .button{
+    width: 176px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 7px;
+  }
+}
+@media only screen and (max-width : 366px) {
+  .program-title-top {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .program-title::before {
+      position: absolute;
+      left: -5px;
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      width: 100%;
+      line-height: 68px;
+  }
+}
+@media only screen and (max-width : 365px) {
+  .program-title-bottom {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+  .program-title::before {
+      position: absolute;
+      left: -5px;
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      width: 100%;
+      line-height: 68px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1170px) {
+
+}
+
+/*==========  screen orientation  ==========*/
+
+/*landscape orientation*/
+@media screen and (orientation: landscape) {
+
+}
+
+/*portrait orientation*/
+@media screen and (orientation: portrait) {
+
+}
